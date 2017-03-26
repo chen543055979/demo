@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    font-weight: normal;
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.svg') format('svg'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.woff') format('woff');
+}
+
+body {
+    font-family: Cambria, Palatino, 'Palatino linotype', 'Palatino LT STD', General, serif;
+    font-size: 15px;
+    font-weight: 400;
+    overflow-y: scroll;
+    color: #3a2127;
+    background: url('../images/bg.jpg');
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clr {
+    clear: both;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container > header {
+    margin: 0 20px 10px 20px;
+    padding: 20px 30px 10px 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.container > header > h1 {
+    font-size: 35px;
+    font-size: 'BebasNeue';
+    font-weight: 400;
+    line-height: 35px;
+    padding-bottom: 5px;
+    color: rgba(26, 89, 120, .9);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.container > header > h1 > span {
+    color: #7cbcd6;
+    text-shadow: 0;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+}
+
+.codrops-demos {
+    padding: 14px;
+}
+
+.codrops-demos > a {
+    font-size: 11px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 60px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 3px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(104, 171, 194, .5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .05) inset;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.container .current-demo,
+.container a.current-demo:hover {
+    color: rgba(104, 171, 194, 1);
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.codrops-demos a:hover {
+    background: #4fa2c4;
+}
+
+
+/*页面主体*/
+
+.cr-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 20px solid #fff;
+}
+
+.cr-container input {
+    display: none;
+}
+
+.cr-container label {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 34px;
+    position: relative;
+    z-index: 1000;
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin-top: 350px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.cr-container label:before {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    margin-left: -17px;
+    content: '';
+    border-radius: 50%;
+    background: rgba(130, 195, 217, .9);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .3);
+    /*水平，垂直，模糊度都为0，尺寸为4px*/
+}
+
+.cr-container input:checked + label {
+    color: #68abc2;
+}
+
+.cr-container input:checked + label:before {
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(104, 171, 194, .6);
+}
+
+.cr-container label:after {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 1px;
+    height: 400px;
+    content: '';
+    background: red;
+}
+
+.cr-container label:last-child:after {
+    width: 0;
+}
+
+.cr-container label:after {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.cr-bgimg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.cr-bgimg > div {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 150px;
+    height: 100%;
+}
