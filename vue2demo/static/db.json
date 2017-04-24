@@ -1,0 +1,65 @@
+{
+  "getNewsList": [
+    {
+      "id": 1,
+      "title": "习近平总书记考察广西在当地引起热烈反响",
+      "url": "http://news.sohu.com/20170423/n490300407.shtml?fi"
+    },
+    {
+      "id": 2,
+      "title": "关于“网络空间命运共同体” 听听世界的声音",
+      "url": "http://news.sohu.com/20170422/n490189447.shtml?fi"
+    },
+    {
+      "id": 3,
+      "title": "今年高考多地合并录取批次 这些地方取消三本",
+      "url": "http://news.sohu.com/20170424/n490386952.shtml?fi"
+    },
+    {
+      "id": 4,
+      "title": "高铁盒饭背后的暴利：45元盒饭成本最高15元",
+      "url": "http://news.sohu.com/20170424/n490386638.shtml?fi"
+    }
+  ],
+  "login": {
+    "username": "yudongdong",
+    "userId": 123123
+  },
+  "getPrice": {
+    "amount": 678
+  },
+  "createOrder": {
+    "orderId": "6djk979"
+  },
+  "getOrderList": {
+    "list": [
+      {
+        "orderId": "ddj123",
+        "product": "数据统计",
+        "version": "高级版",
+        "period": "1年",
+        "buyNum": 2,
+        "date": "2016-10-10",
+        "amount": "500元"
+      },
+      {
+        "orderId": "yuj583",
+        "product": "流量分析",
+        "version": "户外版",
+        "period": "3个月",
+        "buyNum": 1,
+        "date": "2016-5-2",
+        "amount": "2200元"
+      },
+      {
+        "orderId": "pmd201",
+        "product": "广告发布",
+        "version": "商铺版",
+        "period": "3年",
+        "buyNum": 12,
+        "date": "2016-8-3",
+        "amount": "7890元"
+      }
+    ]
+  }
+}
